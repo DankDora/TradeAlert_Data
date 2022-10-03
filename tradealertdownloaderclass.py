@@ -626,7 +626,7 @@ class Data():
 				averagefilesize += os.path.getsize(folderpath + "/" + file_)
 			
 			# using 77% lower than average
-			averagefilesize = 0.77*(averagefilesize/3)
+			averagefilesize = 0.40*(averagefilesize/3)
 			filepath = folderpath + "/" +filename
 			if os.path.getsize(filepath) < averagefilesize:
 				return False
