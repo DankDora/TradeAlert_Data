@@ -36,7 +36,6 @@ while(1):
 	counter = 0
 	try:
 		for ticker in tickersList:
-			print(ticker)
 			# ~ ## ~ ticker = "NXTG"
 			datadl.Data(ticker).update(chart = "hist_volatility", amount = 0) 
 			
