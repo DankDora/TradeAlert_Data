@@ -37,7 +37,7 @@ while(1):
 	try:
 		for ticker in tickersList:
 			# ~ ## ~ ticker = "NXTG"
-			datadl.Data(ticker).update(chart = "hist_volatility", amount = 0) 
+			datadl.Data(ticker).update(chart = "intra_volume", amount = 0) 
 			
 	except (IndexError):
 		
