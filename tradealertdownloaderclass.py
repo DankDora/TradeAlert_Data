@@ -1,7 +1,7 @@
 #! python3
 # Data Downloader.py --  A simple program used to download options data from
 #						 Trade Alert
-
+import tickerList
 
 print("Hello. I won't be printing the files that already exist. \nIf you want to turn this feature on, \ngo to check_file_exists function and 'enable' it.")	
 
