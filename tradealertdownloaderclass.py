@@ -654,7 +654,6 @@ class Data():
 		
 	def update(self, chart, date = closestTradingDate(), amount = 1):
 		
-		# This is here because TradeAlert website can only store 84 data entries for stocks.
 		
 		if chart == "oi":
 			if isinstance(chart, str) == True:
@@ -746,6 +745,8 @@ class Data():
 			
 			for chart in charts_date_ticker:
 				if chart == "oi":
+					# This is here because TradeAlert website can only store 84 data entries for stocks.
+
 					for date in date_list[0:81]:
 						temp_url = self.url_dict.get(chart)
 						temp_url = temp_url.format(self.ticker, date)
