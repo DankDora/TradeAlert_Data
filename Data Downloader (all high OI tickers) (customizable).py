@@ -14,9 +14,6 @@ import time
 
 
 
-
-
-
 with open(r"C:\Users\lorig\Desktop\PythonCode\Projects, Exercises, Programs\Trade Alert Journey\high_OI_tickers.txt") as f:
 	lines = f.readlines()
 
